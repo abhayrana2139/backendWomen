@@ -6,4 +6,5 @@ const Complaintrouter = express.Router();
 Complaintrouter.get("/", getAllComplaints);
 Complaintrouter.post("/addComplaint", addComplaint);
 
+
 export default Complaintrouter;

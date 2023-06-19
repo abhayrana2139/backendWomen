@@ -7,22 +7,24 @@ const ComplaintSchema = new Schema({
     type: String,
     required: true,
   },
-  email:{
+
+  FaultyName:{
+    type: String,
+    req: true
+  },
+  
+  description: {
     type: String,
     required: true,
   },
-  complaint_description: {
-    type: String,
-    required: true,
-  },
-  complaint_title: {
+  title: {
     type: String,
     required: true,
   },
   image: {
-    type: String,
-    required: true,
-  },
+   type : String
+  }
+
 
 });
 

@@ -15,7 +15,7 @@ export const getAllComplaints = async (req, res, next) => {
   };
 
   export const addComplaint = async (req, res, next) => {
-    const { name, email, complaint_title , complaint_description } = req.body;
+    const { name, email, title , description,image,FaultyName } = req.body;
  
   
    
@@ -23,8 +23,10 @@ export const getAllComplaints = async (req, res, next) => {
     const complaint = new Complaint({
       name,
       email,
-      complaint_title , 
-      complaint_description
+      title , 
+      description,
+      image,
+      FaultyName,
     });
   
     try {
@@ -34,4 +36,7 @@ export const getAllComplaints = async (req, res, next) => {
     }
     return res.status(201).json({ complaint });
   };
-  
+
+
+
+    
