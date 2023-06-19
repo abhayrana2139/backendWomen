@@ -11,8 +11,8 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/user", router);
 app.use("/api/blog", blogRouter);
-app.use("/api/complaint", Complaintrouter);
-app.use("/api/upload", UploadRouter)
+app.use("/api/upload", UploadRouter);
+app.use('/api/complaint', Complaintrouter);
 
 mongoose
   .connect(
